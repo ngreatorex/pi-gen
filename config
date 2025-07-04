@@ -1,0 +1,6 @@
+IMG_NAME=raspi-os-custom
+PI_GEN_RELEASE="Custom image"
+TARGET_HOSTNAME=raspi-template
+ENABLE_SSH=1
+PASSWORDLESS_SUDO=1
+DEPLOY_COMPRESSION=none

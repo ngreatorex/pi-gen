@@ -1,5 +1,5 @@
 Types: deb
-URIs: http://raspbian.raspberrypi.com/raspbian/
+URIs: http://raspbian.mirror.uk.sargasso.net/raspbian/
 Architectures: armhf
 Suites: RELEASE
 Components: main contrib non-free rpi
