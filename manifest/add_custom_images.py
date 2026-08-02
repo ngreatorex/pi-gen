@@ -17,6 +17,34 @@ MANIFEST_FILE = os.path.join(DEPLOY_DIR, "os_list_local.rpi-imager-manifest")
 
 CUSTOM_IMAGE_DEFINITIONS = [
     {
+        "name": "Custom Raspberry Pi OS (64-bit)",
+        "description": "A custom build of Debian for Raspberry Pi",
+        "image_pattern": "*-raspi-os-custom-arm64-nominal.img",
+        "icon_url": "https://downloads.raspberrypi.com/raspios_arm64/Raspberry_Pi_OS_(64-bit).png",
+        "url": None,
+        "devices": [
+           "pi5-64bit",
+           "pi4-64bit",
+           "pi3-64bit"
+        ],
+        "init_format": "cloudinit-rpi",
+        "capabilities": []
+    },
+    {
+        "name": "Custom Raspberry Pi OS (64-bit, minimal)",
+        "description": "A custom build of Debian for Raspberry Pi",
+        "image_pattern": "*-raspi-os-custom-arm64-minimal.img",
+        "icon_url": "https://downloads.raspberrypi.com/raspios_arm64/Raspberry_Pi_OS_(64-bit).png",
+        "url": None,
+        "devices": [
+           "pi5-64bit",
+           "pi4-64bit",
+           "pi3-64bit"
+        ],
+        "init_format": "cloudinit-rpi",
+        "capabilities": []
+    },
+    {
         "name": "Custom Raspberry Pi OS (32-bit)",
         "description": "A custom build of Debian for Raspberry Pi",
         "image_pattern": "*-raspi-os-custom-nominal.img",
@@ -24,10 +52,10 @@ CUSTOM_IMAGE_DEFINITIONS = [
         "url": None,
         "devices": [
            "pi5-32bit",
-            "pi4-32bit",
-            "pi3-32bit",
-            "pi2-32bit",
-            "pi1-32bit"
+           "pi4-32bit",
+           "pi3-32bit",
+           "pi2-32bit",
+           "pi1-32bit"
         ],
         "init_format": "cloudinit-rpi",
         "capabilities": []
